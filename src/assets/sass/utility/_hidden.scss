@@ -1,0 +1,16 @@
+@use "foundation" as f;
+
+
+.u-hidden--pc {
+  @include f.mq(pc) {
+    display: none;  
+  }
+}
+
+// スマホでoff
+.u-hidden--md {
+  @include f.mq(md) {
+    display: none;    
+  }
+}
+

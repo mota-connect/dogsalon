@@ -1,0 +1,20 @@
+@use "foundation" as f;
+
+.l-firstview {
+  width: 100%;
+  height: 700px;
+  background-image: url(../img/top_firstview.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.l-firstview__title {
+  line-height: 700px;
+  text-align: center;
+  color: f.$c-subtext;
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-family: f.$ff-en;
+}

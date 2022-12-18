@@ -1,0 +1,41 @@
+@use "variable" as v;
+
+html {
+  font-size: v.$fz-base;
+}
+
+body {
+  color: v.$c-text;
+  font-size: 1.6rem;
+  font-family: v.$ff-base;
+  font-weight: v.$fw-base;
+  line-height: v.$lh-base;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+mark {
+  font-style: normal !important;
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+// インナー幅
+.inner {
+  max-width: 1020px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
