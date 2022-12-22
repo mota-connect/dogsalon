@@ -239,6 +239,83 @@ a:hover {
 	text-align: center;
 }
 
+.l-header {
+	background-color: #E7C59F;
+	height: 90px;
+	width: 100%;
+}
+
+.l-header__container {
+	height: 90px;
+}
+
+.l-header__wrapper {
+	align-items: center;
+	display: flex;
+	height: 90px;
+	justify-content: flex-end;
+}
+
+.l-header__nav {
+	margin-right: 47px;
+}
+
+.l-header__menu {
+	display: flex;
+	transform: translateY(-9px);
+}
+
+.l-header__list:not(:last-child) {
+	margin-right: 75px;
+}
+
+.l-header__link {
+	font-family: "Times New Roman", serif;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	position: relative;
+	text-align: center;
+}
+
+.l-header__link-ja {
+	bottom: -20px;
+	color: #FEFDF9;
+	font-family: "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+	font-size: 1.4rem;
+	font-weight: 800;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+
+.l-header__reservation {
+	background-color: #755339;
+	text-align: center;
+}
+
+.l-header__reservation-link {
+	color: #FEFDF9;
+	display: block;
+	font-family: "Times New Roman", serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	padding: 10px 49px 24px;
+	position: relative;
+	text-align: center;
+}
+
+.l-header__reservation-ja {
+	font-family: "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+	font-size: 1.4rem;
+	font-weight: 800;
+	left: 50%;
+	position: absolute;
+	top: 28px;
+	transform: translateX(-50%);
+}
+
 @media screen and (min-width: 1021px) {
 
 .u-hidden--pc {
