@@ -1,0 +1,166 @@
+@use "foundation" as f;
+
+.p-top-infomation {
+  padding: 100px 40px;
+}
+
+.p-top-infomation__container {
+
+}
+
+.p-top-infomation__wrapper {
+  width: 761px;
+  height: 286px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: f.$c-bg;
+  margin: 0 auto;
+}
+
+.p-top-infomation__picture {
+  width: 343px;
+  height: 230px;
+  margin-right: 73px;
+  margin-left: -135px;
+
+  img {
+    
+  }
+}
+
+.p-top-infomaition__box {
+  position: relative;
+}
+
+.p-top-infomation__title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+
+// 日付BOX PC ------------------------------------
+.p-top-infomation__date-pc {
+  width: 130px;
+  height: 120px;
+  background-color: f.$c-base;
+  position: absolute;
+  top: -76px;
+  right: -130px;
+  padding: 15px 8px 17px;
+}
+
+.p-top-infomation__date-pc-start {
+  color: f.$c-subtext;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  margin-bottom: 40px;
+  padding-right: 39px;
+  display: inline-block;
+  position: relative;
+  line-height: 23px;
+  
+  span {
+    font-size: 1rem;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: f.$c-subtext;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+}
+
+.p-top-infomation__date-pc-end {
+  color: f.$c-subtext;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-align: right;
+  line-height: 23px;
+  position: relative;
+
+  span {
+    font-size: 1rem;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: f.$c-subtext;
+    position: absolute;
+    top: 42%;
+    left: 0;
+  }
+
+}
+
+.p-top-infomation__date-pc-line {
+  width: 125px;
+  height: 1px;
+  background-color: f.$c-subtext;
+  transform: rotate(148deg);
+  position: absolute;
+  top: 61px;
+  left: 0;
+}
+
+// 日付BOX SP ----------------------------------
+.p-top-infomation__date-sp {
+
+}
+
+.p-top-infomation__date-sp-end {
+
+}
+
+
+.p-top-infomation__text {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.4;
+  padding-left: 27px;
+  position: relative;
+
+  span {
+    font-size: 2.2rem;
+  }
+
+  &:first-of-type {
+    margin-bottom: 20px;
+    line-height: 0.8;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background: url(../img/top_news_icon.svg) no-repeat top left / contain;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+
+  }
+
+
+}
+
+.p-top-infomation__comment {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-top: 15px;
+  padding-left: 27px;
+}

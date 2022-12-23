@@ -14,3 +14,9 @@
   }
 }
 
+// スマホ以上でoff
+.u-hidden--mdup {
+  @include f.mq(md-up) {
+    display: none;    
+  }
+}

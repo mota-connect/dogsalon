@@ -4,6 +4,7 @@ $breakpoints: (
   "sm": "screen and (max-width: 576px)",
   // タブレット以下の場合
   "md": "screen and (max-width: 834px)",
+  "md-up": "screen and (min-width: 835px)",
   // インナー幅
   "lg": "screen and (max-width: 1020px)",
   "pc": "screen and (min-width: 1021px)"
