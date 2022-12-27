@@ -1,0 +1,130 @@
+@use "foundation" as f;
+
+.p-top-menu {
+  background: url(../img/top_bg.jpg) no-repeat center center / cover;
+  padding: 59px 20px 80px;
+}
+
+.p-top-menu__container {
+
+}
+
+.p-top-menu__title {
+  font-size: 3.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: f.$ff-en;
+  line-height: calc(37 / 32);
+  margin-bottom: 145px;
+}
+
+.p-top-menu__triming {
+  display: flex;
+  justify-content: center;
+}
+
+.p-top-menu__triming-picture {
+  margin-right: -102px;
+  margin-top: -55px;
+  position: relative;
+  z-index: 20;
+
+  img {
+    width: 513px;
+  }
+}
+
+.p-top-menu__triming-box {
+  max-width: 615px;
+  width: 60.294%;
+  padding: 79px 0 90px 15.882%;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 128px;
+
+  &::before {
+    content: "Triming";
+    display: inline-block;
+    font-size: 9.6rem;
+    font-weight: 700;
+    line-height: calc(110 / 96);
+    font-family: f.$ff-en;
+    color: rgba(195, 119, 30, 0.15);
+    position: absolute;
+    top: -70px;
+    right: 0;
+  }
+}
+
+.p-top-menu__box-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.p-top-menu__box-text {
+  letter-spacing: 0.03em;
+  line-height: calc(36 / 16);
+  width: 90.286%;
+  margin-bottom: 50px;
+}
+
+.p-top-menu__button {
+  background-color: f.$c-base;
+  display: inline-block;
+}
+
+.p-top-menu__link {
+  font-family: f.$ff-en;
+  font-weight: 700;
+  color: f.$c-subtext;
+  padding: 14px 104px 14px 93px;
+  display: inline-block;
+  line-height: calc(18 / 16);
+}
+
+.p-top-menu__hotel {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.p-top-menu__hotel-bg {
+
+}
+
+.p-top-menu__hotel-picture {
+  margin-left: -102px;
+  margin-top: -48px;
+  position: relative;
+  z-index: 20;
+
+  img {
+    width: 513px;
+  }
+}
+
+.p-top-menu__hotel-box {
+  max-width: 615px;
+  width: 60.294%;
+  padding: 81px 11.5% 103px 65px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+
+  &::before {
+    content: "Pet Hotel";
+    display: inline-block;
+    font-size: 9.6rem;
+    font-weight: 700;
+    line-height: calc(110 / 96);
+    font-family: f.$ff-en;
+    color: rgba(195, 119, 30, 0.15);
+    position: absolute;
+    top: -70px;
+    left: 0;
+  }
+}

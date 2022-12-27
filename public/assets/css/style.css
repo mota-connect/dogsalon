@@ -191,6 +191,7 @@ body {
 	font-family: "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 	font-size: 1.6rem;
 	font-weight: 500;
+	letter-spacing: 0.02em;
 	line-height: 1.6;
 }
 
@@ -455,6 +456,127 @@ a:hover {
 	font-weight: 800;
 	margin-top: 15px;
 	padding-left: 27px;
+}
+
+.p-top-menu {
+	background: url(../img/top_bg.jpg) no-repeat center center/cover;
+	padding: 59px 20px 80px;
+}
+
+.p-top-menu__title {
+	font-family: "Times New Roman", serif;
+	font-size: 3.2rem;
+	font-weight: 700;
+	line-height: 1.15625;
+	margin-bottom: 145px;
+	text-align: center;
+}
+
+.p-top-menu__triming {
+	display: flex;
+	justify-content: center;
+}
+
+.p-top-menu__triming-picture {
+	margin-right: -102px;
+	margin-top: -55px;
+	position: relative;
+	z-index: 20;
+}
+
+.p-top-menu__triming-picture img {
+	width: 513px;
+}
+
+.p-top-menu__triming-box {
+	background-color: #fff;
+	margin-bottom: 128px;
+	max-width: 615px;
+	padding: 79px 0 90px 15.882%;
+	position: relative;
+	width: 60.294%;
+	z-index: 10;
+}
+
+.p-top-menu__triming-box::before {
+	color: rgba(195, 119, 30, 0.15);
+	content: "Triming";
+	display: inline-block;
+	font-family: "Times New Roman", serif;
+	font-size: 9.6rem;
+	font-weight: 700;
+	line-height: 1.1458333333;
+	position: absolute;
+	right: 0;
+	top: -70px;
+}
+
+.p-top-menu__box-title {
+	font-size: 2.2rem;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+	line-height: 1.5;
+	margin-bottom: 28px;
+}
+
+.p-top-menu__box-text {
+	letter-spacing: 0.03em;
+	line-height: 2.25;
+	margin-bottom: 50px;
+	width: 90.286%;
+}
+
+.p-top-menu__button {
+	background-color: #755339;
+	display: inline-block;
+}
+
+.p-top-menu__link {
+	color: #FEFDF9;
+	display: inline-block;
+	font-family: "Times New Roman", serif;
+	font-weight: 700;
+	line-height: 1.125;
+	padding: 14px 104px 14px 93px;
+}
+
+.p-top-menu__hotel {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+}
+
+.p-top-menu__hotel-picture {
+	margin-left: -102px;
+	margin-top: -48px;
+	position: relative;
+	z-index: 20;
+}
+
+.p-top-menu__hotel-picture img {
+	width: 513px;
+}
+
+.p-top-menu__hotel-box {
+	background-color: #fff;
+	max-width: 615px;
+	padding: 81px 11.5% 103px 65px;
+	position: relative;
+	width: 60.294%;
+	z-index: 10;
+}
+
+.p-top-menu__hotel-box::before {
+	color: rgba(195, 119, 30, 0.15);
+	content: "Pet Hotel";
+	display: inline-block;
+	font-family: "Times New Roman", serif;
+	font-size: 9.6rem;
+	font-weight: 700;
+	left: 0;
+	line-height: 1.1458333333;
+	position: absolute;
+	top: -70px;
 }
 
 @media screen and (min-width: 835px) {
