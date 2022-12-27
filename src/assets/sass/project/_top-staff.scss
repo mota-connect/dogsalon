@@ -1,0 +1,38 @@
+@use "foundation" as f;
+
+.p-top-staff {
+  padding: 100px 20px 100px;
+}
+
+.p-top-staff__container {
+
+}
+
+.p-top-staff__title {
+  font-size: 3.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: f.$ff-en;
+  line-height: calc(37 / 32);
+  margin-bottom: 70px;
+}
+
+.p-top-staff__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-top-staff__picture {
+  img {
+    max-width: 250px;
+    margin-bottom: 36px;
+  }
+}
+
+.p-top-staff__name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: calc(27 / 18);
+  text-align: center;
+}
+

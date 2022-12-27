@@ -579,6 +579,36 @@ a:hover {
 	top: -70px;
 }
 
+.p-top-staff {
+	padding: 100px 20px 100px;
+}
+
+.p-top-staff__title {
+	font-family: "Times New Roman", serif;
+	font-size: 3.2rem;
+	font-weight: 700;
+	line-height: 1.15625;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.p-top-staff__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.p-top-staff__picture img {
+	margin-bottom: 36px;
+	max-width: 250px;
+}
+
+.p-top-staff__name {
+	font-size: 1.8rem;
+	font-weight: 800;
+	line-height: 1.5;
+	text-align: center;
+}
+
 @media screen and (min-width: 835px) {
 
 .u-hidden--mdup {
