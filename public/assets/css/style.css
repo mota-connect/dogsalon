@@ -240,6 +240,92 @@ a:hover {
 	text-align: center;
 }
 
+.l-footer {
+	background-color: #E7C59F;
+	padding: 62px 20px 52px;
+	width: 100%;
+}
+
+.l-footer__wrapper {
+	align-items: center;
+	display: flex;
+	height: 57px;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+.l-footer__nav {
+	margin-right: 60px;
+}
+
+.l-footer__menu {
+	display: flex;
+}
+
+.l-footer__list:not(:last-child) {
+	margin-right: 70px;
+}
+
+.l-footer__link {
+	font-family: "Times New Roman", serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	position: relative;
+	text-align: center;
+}
+
+.l-footer__reservation {
+	background-color: #755339;
+	text-align: center;
+	width: 281px;
+}
+
+.l-footer__reservation-link {
+	color: #FEFDF9;
+	display: block;
+	font-family: "Times New Roman", serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 1.1666666667;
+	padding: 10px 49px 24px;
+	position: relative;
+	text-align: center;
+}
+
+.l-footer__reservation-ja {
+	font-family: "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+	font-size: 1.3rem;
+	font-weight: 800;
+	left: 50%;
+	position: absolute;
+	top: 28px;
+	transform: translateX(-50%);
+}
+
+.l-footer__sns {
+	margin-bottom: 43px;
+}
+
+.l-footer__sns-box {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.l-footer__sns-item:first-child {
+	margin-right: 30px;
+}
+
+.l-footer__copyright {
+	display: block;
+	font-family: "Times New Roman", serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+
 .l-header {
 	background-color: #E7C59F;
 	height: 90px;
