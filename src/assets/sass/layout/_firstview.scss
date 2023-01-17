@@ -7,6 +7,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @include f.mq(md) {
+    height: 215px;
+    margin-top: 45px;
+  }
 }
 
 .l-firstview__title {
@@ -17,4 +22,10 @@
   font-weight: 700;
   letter-spacing: 0.02em;
   font-family: f.$ff-en;
+
+  @include f.mq(md) {
+    line-height: 215px;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
 }

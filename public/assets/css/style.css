@@ -860,6 +860,17 @@ a:hover {
 
 @media screen and (max-width: 834px) {
 
+.l-firstview {
+	height: 215px;
+	margin-top: 45px;
+}
+
+.l-firstview__title {
+	font-size: 3.2rem;
+	line-height: 215px;
+	margin-bottom: 20px;
+}
+
 .l-header {
 	height: 45px;
 	position: fixed;
