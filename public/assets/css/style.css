@@ -329,7 +329,11 @@ a:hover {
 .l-header {
 	background-color: #E7C59F;
 	height: 90px;
+	padding: 0 20px;
+	position: sticky;
+	top: 0;
 	width: 100%;
+	z-index: 500;
 }
 
 .l-header__container {
@@ -401,6 +405,62 @@ a:hover {
 	position: absolute;
 	top: 28px;
 	transform: translateX(-50%);
+}
+
+.l-header__title {
+	color: #FEFDF9;
+	font-family: "Times New Roman", serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 45px;
+	text-align: center;
+}
+
+.l-header__tel {
+	height: 15px;
+	position: fixed;
+	right: 70px;
+	top: 12px;
+	width: 15px;
+}
+
+.l-header__mail {
+	height: 15px;
+	position: fixed;
+	right: 25px;
+	top: 12px;
+	width: 15px;
+}
+
+.l-header__drawer-icon {
+	cursor: pointer;
+	height: 14px;
+	left: 20px;
+	position: fixed;
+	top: 16px;
+	transition: 0.5s;
+	width: 20px;
+}
+
+.l-header__drawer-icon:hover {
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
+.l-header__drawer-icon-part {
+	background-color: #31251C;
+	border-radius: 10px;
+	height: 2px;
+	position: absolute;
+	width: 20px;
+}
+
+.l-header__drawer-icon-part:nth-child(2) {
+	top: 6px;
+}
+
+.l-header__drawer-icon-part:nth-child(3) {
+	top: 12px;
 }
 
 .p-top-infomation {
@@ -799,6 +859,11 @@ a:hover {
 }
 
 @media screen and (max-width: 834px) {
+
+.l-header {
+	height: 45px;
+	position: fixed;
+}
 
 .u-hidden--md {
 	display: none;

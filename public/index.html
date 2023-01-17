@@ -7,15 +7,19 @@
   <title>Dog's Salon</title>
 
   <link rel="stylesheet" href="./assets/css/style.min.css">
+
+  <script>console.log("")</script>
 </head>
 <body>
-  <div class="l-firstview">
+  <div id="header-js" class="l-firstview">
     <h1 class="l-firstview__title">Dog’s Salon</h1>
   </div>
 
   <header class="l-header">
     <div class="l-header__container inner">
-      <div class="l-header__wrapper">
+
+      <!-- グローバルメニュー（PC） -->
+      <div class="l-header__wrapper u-hidden--md">
         <nav class="l-header__nav">
           <ul class="l-header__menu">
             <li class="l-header__list"><a href="index.html" class="l-header__link">Top<br><span class="l-header__link-ja">トップ</span></a></li>
@@ -29,8 +33,28 @@
           <a href="reservation.html" class="l-header__reservation-link">Reservation<br><span class="l-header__reservation-ja">ご予約</span></a>
         </div>
       </div> <!-- /.l-header__wrapper -->
+
+      <!-- SP版 -->
+      <div class="l-header-wrapper-sp u-hidden--mdup">
+        <p class="l-header__title">Dog’s Salon</p>
+        <div class="l-header__tel"><img src="./assets/img/top_tel.svg" alt="tel"></div>
+        <div class="l-header__mail"><img src="./assets/img/top_mail.svg" alt="mail"></div>
+
+      </div>
+
+      <!-- ドロワーアイコン -->
+      <div class="l-header__drawer-icon u-hidden--mdup">
+        <span class="l-header__drawer-icon-part"></span>
+        <span class="l-header__drawer-icon-part"></span>
+        <span class="l-header__drawer-icon-part"></span>
+      </div>
     </div> <!-- /.l-header__container -->
   </header>
+
+  <!-- ドロワーメニュー -->
+  <div class="p-drawer">
+
+  </div>
 
   <div class="p-top-infomation">
     <div class="p-top-infomation__container inner">
@@ -166,6 +190,10 @@
       <small class="l-footer__copyright">&copy; 2022 Dog’s Salon</small>
     </div> <!-- /.l-header__container -->
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+  <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
