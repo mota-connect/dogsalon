@@ -1022,6 +1022,15 @@ a:hover {
 	display: none;
 }
 
+.p-top-news {
+	padding-bottom: 50px;
+}
+
+.p-top-news__title {
+	font-size: 2.4rem;
+	margin-bottom: 20px;
+}
+
 .p-top-staff {
 	padding: 50px 20px 20px;
 }
@@ -1070,6 +1079,31 @@ a:hover {
 .p-top-infomation__comment {
 	font-size: 1rem;
 	margin-left: -5%;
+}
+
+.p-top-news__box {
+	margin-bottom: 30px;
+}
+
+.p-top-news__wrap {
+	font-size: 1.3rem;
+}
+
+.p-top-news__wrap:first-child > .p-top-news__date::before {
+	left: 9px;
+}
+
+.p-top-news__date {
+	padding-left: 60px;
+	width: 148px;
+}
+
+.p-top-news__head {
+	width: calc(100% - 148px);
+}
+
+.p-top-news__link {
+	font-size: 1.3rem;
 }
 
 }
