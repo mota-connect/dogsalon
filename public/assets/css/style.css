@@ -679,11 +679,8 @@ a:hover {
 	margin-right: -102px;
 	margin-top: -55px;
 	position: relative;
-	z-index: 20;
-}
-
-.p-top-menu__triming-picture img {
 	width: 513px;
+	z-index: 20;
 }
 
 .p-top-menu__triming-box {
@@ -748,11 +745,8 @@ a:hover {
 	margin-left: -102px;
 	margin-top: -48px;
 	position: relative;
-	z-index: 20;
-}
-
-.p-top-menu__hotel-picture img {
 	width: 513px;
+	z-index: 20;
 }
 
 .p-top-menu__hotel-box {
@@ -960,6 +954,72 @@ a:hover {
 .p-top-infomation__comment {
 	margin-top: 8px;
 	text-align: center;
+}
+
+.p-top-menu {
+	padding: 50px 0 26px;
+}
+
+.p-top-menu__title {
+	margin-bottom: 15px;
+}
+
+.p-top-menu__triming {
+	display: block;
+}
+
+.p-top-menu__triming-picture {
+	margin: 0 auto 20px;
+	width: 66.666%;
+}
+
+.p-top-menu__triming-box {
+	margin-bottom: 20px;
+	margin-top: -143px;
+	padding: 144px 20px 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.p-top-menu__triming-box::before {
+	display: none;
+}
+
+.p-top-menu__box-title {
+	font-size: 2rem;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.p-top-menu__box-text {
+	font-size: 1.1rem;
+	line-height: 2.2727272727;
+	margin: 0 auto 20px;
+	text-align: center;
+}
+
+.p-top-menu__link {
+	font-size: 1.4rem;
+}
+
+.p-top-menu__hotel {
+	display: block;
+}
+
+.p-top-menu__hotel-picture {
+	margin: 0 auto 20px;
+	width: 66.666%;
+}
+
+.p-top-menu__hotel-box {
+	margin-top: -143px;
+	padding: 144px 20px 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.p-top-menu__hotel-box::before {
+	display: none;
 }
 
 .u-hidden--md {

@@ -3,10 +3,10 @@
 .p-top-menu {
   background: url(../img/top_bg.jpg) no-repeat center center / cover;
   padding: 59px 20px 80px;
-}
 
-.p-top-menu__container {
-
+  @include f.mq(md) {
+    padding: 50px 0 26px;
+  }
 }
 
 .p-top-menu__title {
@@ -16,11 +16,19 @@
   font-family: f.$ff-en;
   line-height: calc(37 / 32);
   margin-bottom: 145px;
+
+  @include f.mq(md) {
+    margin-bottom: 15px;
+  }
 }
 
 .p-top-menu__triming {
   display: flex;
   justify-content: center;
+
+  @include f.mq(md) {
+    display: block;
+  }
 }
 
 .p-top-menu__triming-picture {
@@ -28,9 +36,19 @@
   margin-top: -55px;
   position: relative;
   z-index: 20;
+  width: 513px;
+
+  @include f.mq(md) {
+    margin: 0 auto 20px;
+    width: 66.666%;
+  }
 
   img {
-    width: 513px;
+    // width: 513px;
+
+    @include f.mq(md) {
+      // width: 66.666%;
+    }
   }
 }
 
@@ -43,6 +61,14 @@
   z-index: 10;
   margin-bottom: 128px;
 
+  @include f.mq(md) {
+    width: 100%;
+    margin-top: -143px;
+    padding: 144px 20px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
   &::before {
     content: "Triming";
     display: inline-block;
@@ -54,6 +80,10 @@
     position: absolute;
     top: -70px;
     right: 0;
+
+    @include f.mq(md) {
+      display: none;
+    }
   }
 }
 
@@ -63,6 +93,12 @@
   letter-spacing: 0.02em;
   line-height: 1.5;
   margin-bottom: 28px;
+
+  @include f.mq(md) {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
 }
 
 .p-top-menu__box-text {
@@ -70,11 +106,22 @@
   line-height: calc(36 / 16);
   width: 90.286%;
   margin-bottom: 50px;
+
+  @include f.mq(md) {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0 auto 20px;
+    line-height: calc(25 / 11);
+  }
 }
 
 .p-top-menu__button {
   background-color: f.$c-base;
   display: inline-block;
+
+  @include f.mq(md) {
+    
+  }
 }
 
 .p-top-menu__link {
@@ -84,16 +131,20 @@
   padding: 14px 104px 14px 93px;
   display: inline-block;
   line-height: calc(18 / 16);
+
+  @include f.mq(md) {
+    font-size: 1.4rem;
+  }
 }
 
 .p-top-menu__hotel {
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
-}
 
-.p-top-menu__hotel-bg {
-
+  @include f.mq(md) {
+    display: block;
+  }
 }
 
 .p-top-menu__hotel-picture {
@@ -101,9 +152,15 @@
   margin-top: -48px;
   position: relative;
   z-index: 20;
+  width: 513px;
+
+  @include f.mq(md) {
+    margin: 0 auto 20px;
+    width: 66.666%;
+  }
 
   img {
-    width: 513px;
+
   }
 }
 
@@ -114,6 +171,13 @@
   background-color: #fff;
   position: relative;
   z-index: 10;
+
+  @include f.mq(md) {
+    width: 100%;
+    margin-top: -143px;
+    padding: 144px 20px 20px;
+    text-align: center;
+  }
 
   &::before {
     content: "Pet Hotel";
@@ -126,5 +190,9 @@
     position: absolute;
     top: -70px;
     left: 0;
+
+    @include f.mq(md) {
+      display: none;
+    }
   }
 }
