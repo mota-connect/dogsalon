@@ -484,6 +484,10 @@ a:hover {
 	width: 343px;
 }
 
+.p-top-infomation__picture img {
+	margin-top: -42px;
+}
+
 .p-top-infomaition__box {
 	position: relative;
 }
@@ -567,6 +571,54 @@ a:hover {
 	top: 61px;
 	transform: rotate(148deg);
 	width: 125px;
+}
+
+.p-top-infomation__date-sp {
+	align-items: center;
+	background-color: #755339;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	min-width: 244px;
+	padding: 8px 16px;
+	width: 55%;
+}
+
+.p-top-infomation__date-sp-start {
+	color: #FEFDF9;
+	font-size: 2.4rem;
+	font-weight: 800;
+	letter-spacing: 0.035em;
+	margin-right: 15px;
+}
+
+.p-top-infomation__date-sp-start span {
+	font-size: 1rem;
+}
+
+.p-top-infomation__date-sp-arrow {
+	border-right: 1px solid #FEFDF9;
+	border-top: 1px solid #FEFDF9;
+	height: 9px;
+	transform: rotate(45deg);
+	width: 9px;
+}
+
+.p-top-infomation__date-sp-arrow:nth-of-type(1) {
+	margin-right: -6px;
+}
+
+.p-top-infomation__date-sp-end {
+	color: #FEFDF9;
+	font-size: 2.4rem;
+	font-weight: 800;
+	letter-spacing: 0.035em;
+	margin-left: 15px;
+}
+
+.p-top-infomation__date-sp-end span {
+	font-size: 1rem;
 }
 
 .p-top-infomation__text {
@@ -876,8 +928,66 @@ a:hover {
 	position: fixed;
 }
 
+.p-top-infomation {
+	padding: 62px 0 0;
+}
+
+.p-top-infomation__wrapper {
+	display: block;
+	height: auto;
+	padding-bottom: 25px;
+	width: 100%;
+}
+
+.p-top-infomation__picture {
+	height: auto;
+	margin: 0 auto;
+	width: 66.666%;
+}
+
+.p-top-infomation__title {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.p-top-infomation__text {
+	margin: 0 auto;
+	width: 52%;
+}
+
+.p-top-infomation__comment {
+	margin-top: 8px;
+	text-align: center;
+}
+
 .u-hidden--md {
 	display: none;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+
+.p-top-infomation__text {
+	font-size: 1.1rem;
+	margin-left: 20.533%;
+	width: 80%;
+}
+
+.p-top-infomation__text span {
+	font-size: 1.8rem;
+}
+
+.p-top-infomation__text::before {
+	height: 12px;
+	width: 12px;
+}
+
+.p-top-infomation__comment {
+	font-size: 1rem;
+	margin-left: -5%;
 }
 
 }
