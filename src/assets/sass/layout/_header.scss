@@ -119,35 +119,3 @@
   top: 12px;
   right: 25px;
 }
-
-
-.l-header__drawer-icon {
-  width: 20px;
-  height: 14px;
-  position: fixed;
-  top: 16px;
-  left: 20px;
-  cursor: pointer;
-  transition: 0.5s;
-
-  &:hover {
-    opacity: 0.6;
-    transition: 0.5s;
-  }
-}
-
-.l-header__drawer-icon-part {
-  width: 20px;
-  height: 2px;
-  background-color: f.$c-text;
-  border-radius: 10px;
-  position: absolute;
-
-  &:nth-child(2) {
-    top: 6px;
-  }
-
-  &:nth-child(3) {
-    top: 12px;
-  }
-}

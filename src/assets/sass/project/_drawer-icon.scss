@@ -1,0 +1,49 @@
+@use "foundation" as f;
+
+.p-drawer-icon {
+  width: 20px;
+  height: 14px;
+  position: fixed;
+  top: 16px;
+  left: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 700;
+  transition: 0.5s;
+
+  &.open {
+
+    &>.p-drawer-icon-part {
+      &:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+        background-color: f.$c-subtext;
+        transition: 0.5s;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        transition: 0.5s;
+      }
+      &:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+        background-color: f.$c-subtext;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.p-drawer-icon-part {
+  width: 20px;
+  height: 2px;
+  background-color: f.$c-text;
+  border-radius: 10px;
+  position: absolute;
+
+  &:nth-child(2) {
+    top: 6px;
+  }
+
+  &:nth-child(3) {
+    top: 12px;
+  }
+}

@@ -1,0 +1,40 @@
+@use "foundation" as f;
+
+.p-drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: f.$c-base;
+  z-index: 600;
+  padding: 34% 0;
+  transform: translateX(-200%);
+  transition: 0.5s;
+  
+  &.open {
+    transform: none;
+    transition: 0.5s;
+  }
+}
+
+.p-drawer__nav {
+  height: 100vh;
+  font-size: 1.8rem;
+  color: f.$c-subtext;
+  font-weight: 700;
+  text-align: center;
+  
+}
+
+.p-drawer__menu {
+
+}
+
+.p-drawer__list {
+  margin-bottom: 50px;
+}
+
+.p-drawer__link {
+  
+}
