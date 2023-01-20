@@ -258,10 +258,6 @@ a:hover {
 	margin-right: 60px;
 }
 
-.l-footer__menu {
-	display: flex;
-}
-
 .l-footer__list:not(:last-child) {
 	margin-right: 70px;
 }
@@ -915,6 +911,66 @@ a:hover {
 	font-size: 3.2rem;
 	line-height: 215px;
 	margin-bottom: 20px;
+}
+
+.l-footer {
+	padding: 40px 40px 45px 40px;
+}
+
+.l-footer__wrapper {
+	flex-direction: column-reverse;
+	margin-bottom: 180px;
+}
+
+.l-footer__nav {
+	margin: 0 auto;
+	max-width: 202px;
+	width: 100%;
+}
+
+.l-footer__menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+}
+
+.l-footer__list {
+	margin-bottom: 40px;
+}
+
+.l-footer__list:nth-child(1),
+.l-footer__list:nth-child(2),
+.l-footer__list:nth-child(4) {
+	margin-right: 58px;
+}
+
+.l-footer__list:nth-child(3) {
+	margin-right: 0;
+}
+
+.l-footer__link {
+	font-size: 1.2rem;
+}
+
+.l-footer__reservation {
+	margin-bottom: 40px;
+}
+
+.l-footer__reservation-link {
+	font-size: 1.4rem;
+}
+
+.l-footer__reservation-ja {
+	font-size: 1.2rem;
+}
+
+.l-footer__sns-item:first-child {
+	margin-right: 80px;
+}
+
+.l-footer__sns-item {
+	height: 30px;
+	width: 30px;
 }
 
 .l-header {
