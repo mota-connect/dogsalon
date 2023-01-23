@@ -474,6 +474,39 @@ a:hover {
 	text-align: center;
 }
 
+.p-about-staff {
+	padding-top: 100px;
+}
+
+.p-about-staff__title {
+	margin-bottom: 70px;
+}
+
+.p-about-staff__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.p-about-staff__picture {
+	width: 300px;
+}
+
+.p-about-staff__picture img {
+	margin-bottom: 20px;
+}
+
+.p-about-staff__name {
+	font-size: 2rem;
+	font-weight: 800;
+	margin-bottom: 1px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.p-about-staff__text {
+	line-height: 1.625;
+}
+
 .p-drawer-icon {
 	cursor: pointer;
 	height: 14px;
