@@ -451,6 +451,29 @@ a:hover {
 	width: 15px;
 }
 
+.c-section-title {
+	font-family: "Times New Roman", serif;
+	font-size: 3.2rem;
+	font-weight: 700;
+	line-height: 1.15625;
+	text-align: center;
+}
+
+.p-about-greeting {
+	padding: 100px 20px 0;
+	text-align: center;
+}
+
+.p-about-greeting__title {
+	margin-bottom: 70px;
+}
+
+.p-about-greeting__text {
+	letter-spacing: 0.03em;
+	line-height: 2.25;
+	text-align: center;
+}
+
 .p-drawer-icon {
 	cursor: pointer;
 	height: 14px;
