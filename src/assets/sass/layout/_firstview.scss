@@ -1,9 +1,27 @@
 @use "foundation" as f;
 
+.product1>.l-firstview {
+  background-image: url(../img/top_firstview.jpg);
+}
+.product2>.l-firstview {
+  background-image: url(../img/about_firstview.jpg);
+}
+.product3>.l-firstview {
+  background-image: url(../img/menu_firstview.jpg);
+}
+.product4>.l-firstview {
+  background-image: url(../img/hotel_firstview.jpg);
+}
+.product5>.l-firstview {
+  background-image: url(../img/access_firstview.jpg);
+}
+.product6>.l-firstview {
+  background-image: url(../img/reservation_firstview.jpg);
+}
+
 .l-firstview {
   width: 100%;
   height: 700px;
-  background-image: url(../img/top_firstview.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

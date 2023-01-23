@@ -221,8 +221,31 @@ a:hover {
 	max-width: 1020px;
 }
 
-.l-firstview {
+.product1 > .l-firstview {
 	background-image: url(../img/top_firstview.jpg);
+}
+
+.product2 > .l-firstview {
+	background-image: url(../img/about_firstview.jpg);
+}
+
+.product3 > .l-firstview {
+	background-image: url(../img/menu_firstview.jpg);
+}
+
+.product4 > .l-firstview {
+	background-image: url(../img/hotel_firstview.jpg);
+}
+
+.product5 > .l-firstview {
+	background-image: url(../img/access_firstview.jpg);
+}
+
+.product6 > .l-firstview {
+	background-image: url(../img/reservation_firstview.jpg);
+}
+
+.l-firstview {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -1,0 +1,9 @@
+@use "foundation" as f;
+
+.c-section-title {
+  font-size: 3.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: f.$ff-en;
+  line-height: calc(37 / 32);
+}
