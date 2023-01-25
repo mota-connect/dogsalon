@@ -281,6 +281,10 @@ a:hover {
 	margin-right: 60px;
 }
 
+.l-footer__menu {
+	display: flex;
+}
+
 .l-footer__list:not(:last-child) {
 	margin-right: 70px;
 }
@@ -472,6 +476,26 @@ a:hover {
 	letter-spacing: 0.03em;
 	line-height: 2.25;
 	text-align: center;
+}
+
+.p-about-instagram {
+	padding: 100px 0 85px;
+}
+
+.p-about-instagram__title {
+	margin-bottom: 70px;
+}
+
+.p-about-instagram__box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.p-about-instagram__picture {
+	height: auto;
+	margin-bottom: 15px;
+	width: 250px;
 }
 
 .p-about-staff {
@@ -1023,6 +1047,19 @@ a:hover {
 
 }
 
+@media screen and (max-width: 1020px) {
+
+.p-about-instagram {
+	margin: 0 auto;
+	max-width: 880px;
+}
+
+.p-about-instagram__picture {
+	width: 200px;
+}
+
+}
+
 @media screen and (max-width: 834px) {
 
 .l-firstview {
@@ -1052,7 +1089,6 @@ a:hover {
 }
 
 .l-footer__menu {
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: start;
 }
@@ -1099,6 +1135,20 @@ a:hover {
 .l-header {
 	height: 45px;
 	position: fixed;
+}
+
+.p-about-instagram {
+	max-width: 600px;
+	padding: 50px 40px 40px;
+}
+
+.p-about-instagram__title {
+	margin-bottom: 20px;
+}
+
+.p-about-instagram__picture {
+	margin-bottom: 5px;
+	width: 150px;
 }
 
 .p-top-infomation {
@@ -1239,6 +1289,14 @@ a:hover {
 }
 
 @media screen and (max-width: 576px) {
+
+.p-about-instagram {
+	max-width: 450px;
+}
+
+.p-about-instagram__picture {
+	width: 90px;
+}
 
 .p-top-infomation__text {
 	font-size: 1.1rem;

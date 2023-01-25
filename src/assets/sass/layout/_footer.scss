@@ -38,9 +38,9 @@
 }
 
 .l-footer__menu {
+  display: flex;
 
   @include f.mq(md) {
-    display: flex;
     justify-content: start;
     flex-wrap: wrap;
   }
