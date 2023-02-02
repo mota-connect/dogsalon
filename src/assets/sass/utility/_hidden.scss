@@ -7,6 +7,13 @@
   }
 }
 
+// pc以下でoff
+.u-hidden--lg {
+  @include f.mq(lg) {
+    display: none;  
+  }
+}
+
 // スマホでoff
 .u-hidden--md {
   @include f.mq(md) {

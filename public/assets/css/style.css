@@ -606,6 +606,57 @@ a:hover {
 	margin-bottom: 50px;
 }
 
+.p-menu-type {
+	padding: 100px 20px 111px;
+}
+
+.p-menu-type__title {
+	margin-bottom: 70px;
+}
+
+.p-menu-type__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.p-menu-type__box {
+	background-color: rgba(231, 197, 159, 0.8);
+	max-width: 320px;
+	padding: 15px 15px 48px 15px;
+	position: relative;
+	width: 100%;
+}
+
+.p-menu-type__picture {
+	margin-bottom: 3px;
+	width: 100%;
+}
+
+.p-menu-type__head {
+	color: #5B2E35;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
+	margin-bottom: 6px;
+}
+
+.p-menu-type__text {
+	color: #5B2E35;
+	font-size: 1.4rem;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
+}
+
+.p-menu-type__accent {
+	bottom: -21px;
+	color: #fff;
+	font-size: 4.8rem;
+	font-weight: 700;
+	position: absolute;
+	right: 0;
+}
+
 .p-top-infomation {
 	padding: 100px 40px;
 }
@@ -1056,6 +1107,10 @@ a:hover {
 
 .p-about-instagram__picture {
 	width: 200px;
+}
+
+.u-hidden--lg {
+	display: none;
 }
 
 }
