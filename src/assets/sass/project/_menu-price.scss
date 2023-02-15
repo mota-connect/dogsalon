@@ -1,0 +1,146 @@
+@use "foundation" as f;
+
+.p-menu-price {
+  padding: 60px 20px 78px;
+  background: url(../img/top_bg.jpg) no-repeat center center / cover;
+
+  @include f.mq(md) {
+    padding: 50px 20px 20px;
+  }
+}
+
+.p-menu-price__container {
+  // padding: 0 70px;
+}
+
+.p-menu-price__title {
+  margin-bottom: 59px;
+}
+
+.p-menu-price__table {
+  max-width: 1020px;
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 78px;
+}
+
+.p-menu-price__table-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+
+  @include f.mq(md) {
+    padding: 8px;
+  }
+
+  &:nth-child(1) {
+    border-bottom: 1px solid rgba(49, 37, 28, 0.5);
+    border-top: 1px solid rgba(49, 37, 28, 0.5);
+  }
+
+  &:nth-child(2n+3) {
+    background-color: rgba(49, 37, 28, 0.1);
+  }
+
+
+  th {
+    width: 200px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: calc(29 / 20);
+
+    @include f.mq(md) {
+      width: 22%;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: calc(19 / 13);
+    }
+
+    &:nth-child(1) {
+      @include f.mq(md) {
+        width: 44%;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-right: 13.725%;
+
+      @include f.mq(md) {
+        margin-right: 6%;
+      }
+    }
+  }
+
+  td {
+    width: 200px;
+    text-align: center;
+    line-height: 1.5;
+
+    @include f.mq(md) {
+      width: 22%;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: calc(19 / 13);
+      white-space: nowrap;
+    }
+
+    &:nth-child(1) {
+      @include f.mq(md) {
+        width: 44%;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-right: 13.725%;
+
+
+      @include f.mq(md) {
+        margin-right: 6%;
+      }
+    }
+
+  }
+}
+
+.p-menu-price__option {
+  padding: 50px 33px;
+  background-color: rgba(49, 37, 28, 0.1);
+
+  @include f.mq(md) {
+    padding: 10px 20px;
+  }
+}
+
+.p-menu-price__option-item {
+  &:first-child {
+    margin-bottom: 40px;
+
+    @include f.mq(md) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.p-menu-price__option-head {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.5;
+  margin-bottom: 10px;
+
+  @include f.mq(md) {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+}
+
+.p-menu-price__option-text {
+  line-height: 1.5;
+
+  @include f.mq(md) {
+    font-size: 1.1rem;
+  }
+}

@@ -2,6 +2,10 @@
 
 .p-menu-type {
   padding: 100px 20px 111px;
+
+  @include f.mq(md) {
+    padding: 50px 0 20px;
+  }
 }
 
 .p-menu-type__container {
@@ -15,6 +19,12 @@
 .p-menu-type__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @include f.mq(md) {
+    flex-direction: column;
+    align-items: center;
+    
+  }
 }
 
 .p-menu-type__box {
@@ -23,6 +33,15 @@
   padding: 15px 15px 48px 15px;
   background-color: rgba(231, 197, 159, 0.8);
   position: relative;
+  
+  @include f.mq(md) {
+    max-width: 600px;
+    padding: 10px 42px 40px;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .p-menu-type__picture {
@@ -44,6 +63,11 @@
   line-height: calc(21 / 14);
   letter-spacing: 0.03em;
   color: #5B2E35;
+
+  @include f.mq(md) {
+    font-size: 1.1rem;
+    line-height: calc(16 / 11);
+  }
 }
 
 .p-menu-type__accent {
@@ -53,5 +77,10 @@
   position: absolute;
   bottom: -21px;
   right: 0;
+
+  @include f.mq(md) {
+    font-size: 4rem;
+    right: 20px;
+  }
 }
 
