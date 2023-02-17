@@ -1,0 +1,25 @@
+@use "foundation" as f;
+
+.p-hotel-summary {
+  padding: 100px 20px;
+}
+
+.p-hotel-summary__title {
+  margin-bottom: 70px;
+}
+
+.p-hotel-summary__text {
+  line-height: calc(36 / 16);
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.p-hotel-summary__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-hotel-summary__picture {
+  width: 27.549%;
+}
+
