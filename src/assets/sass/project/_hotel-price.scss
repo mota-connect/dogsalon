@@ -1,0 +1,70 @@
+@use "foundation" as f;
+
+.p-hotel-price {
+  padding: 60px 20px 100px;
+  background: url(../img/top_bg.jpg) no-repeat center center / cover;
+}
+
+.p-hotel-price__container {
+
+}
+
+.p-hotel-price__title {
+  margin-bottom: 60px;
+}
+
+.p-hotel-price__box {
+  margin-bottom: 70px;
+
+  &:nth-of-type(1) {
+    margin-bottom: 80px;
+  }
+}
+
+
+.p-hotel-price__item {
+  max-width: 1020px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid rgba(49, 37, 28, 0.5);
+  border-bottom: 1px solid rgba(49, 37, 28, 0.5);
+}
+
+.p-hotel-price__table {
+  max-width: 1020px;
+  width: 100%;
+}
+
+.p-hotel-price__table-wrap {
+  text-align: center;
+  height: 60px;
+  line-height: 1.5;
+
+  &:nth-child(2n) {
+    background-color: rgba(49, 37, 28, 0.1);
+  }
+
+  th {
+    font-size: 2rem;
+    font-weight: 800;
+    vertical-align: middle;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+}
+
+.p-hotel-price__comment {
+  background-color: rgba(49, 37, 28, 0.1);
+  padding: 31px 33px;
+}
+
+.p-hotel-price__comment-text {
+  line-height: 1.5;
+}

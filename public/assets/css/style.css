@@ -606,6 +606,70 @@ a:hover {
 	margin-bottom: 50px;
 }
 
+.p-hotel-price {
+	background: url(../img/top_bg.jpg) no-repeat center center/cover;
+	padding: 60px 20px 100px;
+}
+
+.p-hotel-price__title {
+	margin-bottom: 60px;
+}
+
+.p-hotel-price__box {
+	margin-bottom: 70px;
+}
+
+.p-hotel-price__box:nth-of-type(1) {
+	margin-bottom: 80px;
+}
+
+.p-hotel-price__item {
+	border-bottom: 1px solid rgba(49, 37, 28, 0.5);
+	border-top: 1px solid rgba(49, 37, 28, 0.5);
+	font-size: 2rem;
+	font-weight: 800;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	max-width: 1020px;
+	padding: 15px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.p-hotel-price__table {
+	max-width: 1020px;
+	width: 100%;
+}
+
+.p-hotel-price__table-wrap {
+	height: 60px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.p-hotel-price__table-wrap:nth-child(2n) {
+	background-color: rgba(49, 37, 28, 0.1);
+}
+
+.p-hotel-price__table-wrap th {
+	font-size: 2rem;
+	font-weight: 800;
+	vertical-align: middle;
+}
+
+.p-hotel-price__table-wrap td {
+	vertical-align: middle;
+}
+
+.p-hotel-price__comment {
+	background-color: rgba(49, 37, 28, 0.1);
+	padding: 31px 33px;
+}
+
+.p-hotel-price__comment-text {
+	line-height: 1.5;
+}
+
 .p-hotel-summary {
 	padding: 100px 20px;
 }
