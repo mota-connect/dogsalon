@@ -1369,6 +1369,32 @@ a:hover {
 	width: 150px;
 }
 
+.p-hotel-summary {
+	padding: 50px 58px 20px;
+}
+
+.p-hotel-summary__title {
+	margin-bottom: 10px;
+}
+
+.p-hotel-summary__text {
+	font-size: 1.1rem;
+	line-height: 2.1818181818;
+	margin-bottom: 15px;
+}
+
+.p-hotel-summary__wrapper {
+	justify-content: center;
+}
+
+.p-hotel-summary__picture {
+	width: 100%;
+}
+
+.p-hotel-summary__picture img {
+	width: 100%;
+}
+
 .p-menu-price {
 	padding: 50px 20px 20px;
 }

@@ -2,24 +2,51 @@
 
 .p-hotel-summary {
   padding: 100px 20px;
+
+  @include f.mq(md) {
+    padding: 50px 58px 20px ;
+  }
 }
 
 .p-hotel-summary__title {
   margin-bottom: 70px;
+
+  @include f.mq(md) {
+    margin-bottom: 10px;    
+  }
 }
 
 .p-hotel-summary__text {
   line-height: calc(36 / 16);
   margin-bottom: 70px;
   text-align: center;
+
+  @include f.mq(md) {
+    font-size: 1.1rem;
+    line-height: calc(24 / 11);
+    margin-bottom: 15px;
+  }
 }
 
 .p-hotel-summary__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @include f.mq(md) {
+    justify-content: center;
+  }
 }
 
 .p-hotel-summary__picture {
   width: 27.549%;
+
+  @include f.mq(md) {
+    width: 100%;
+
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
