@@ -663,11 +663,20 @@ a:hover {
 
 .p-hotel-price__comment {
 	background-color: rgba(49, 37, 28, 0.1);
-	padding: 31px 33px;
+	padding: 31px 49px;
 }
 
 .p-hotel-price__comment-text {
 	line-height: 1.5;
+	position: relative;
+}
+
+.p-hotel-price__comment-text::before {
+	content: "※";
+	display: inline-block;
+	left: -16px;
+	position: absolute;
+	top: 0;
 }
 
 .p-hotel-summary {
@@ -1367,6 +1376,48 @@ a:hover {
 .p-about-instagram__picture {
 	margin-bottom: 5px;
 	width: 150px;
+}
+
+.p-hotel-price {
+	padding: 50px 20px 20px;
+}
+
+.p-hotel-price__box {
+	margin-bottom: 20px;
+}
+
+.p-hotel-price__box:nth-of-type(1) {
+	margin-bottom: 20px;
+}
+
+.p-hotel-price__item {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	padding: 8px;
+}
+
+.p-hotel-price__table-wrap {
+	height: 35px;
+}
+
+.p-hotel-price__table-wrap th {
+	font-size: 1.3rem;
+}
+
+.p-hotel-price__table-wrap td {
+	font-size: 1.1rem;
+}
+
+.p-hotel-price__comment {
+	padding: 14px 20px 14px 31px;
+}
+
+.p-hotel-price__comment-text::before {
+	left: -11px;
+}
+
+.p-hotel-price__comment-text {
+	font-size: 1.1rem;
 }
 
 .p-hotel-summary {

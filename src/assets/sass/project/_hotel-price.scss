@@ -3,6 +3,10 @@
 .p-hotel-price {
   padding: 60px 20px 100px;
   background: url(../img/top_bg.jpg) no-repeat center center / cover;
+
+  @include f.mq(md) {
+    padding: 50px 20px 20px;
+  }
 }
 
 .p-hotel-price__container {
@@ -16,8 +20,16 @@
 .p-hotel-price__box {
   margin-bottom: 70px;
 
+  @include f.mq(md) {
+    margin-bottom: 20px;
+  }
+
   &:nth-of-type(1) {
     margin-bottom: 80px;
+
+    @include f.mq(md) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -33,6 +45,12 @@
   padding: 15px 0;
   border-top: 1px solid rgba(49, 37, 28, 0.5);
   border-bottom: 1px solid rgba(49, 37, 28, 0.5);
+
+  @include f.mq(md) {
+    font-size: 1.3rem;
+    padding: 8px;
+    margin-bottom: 0;
+  }
 }
 
 .p-hotel-price__table {
@@ -45,6 +63,10 @@
   height: 60px;
   line-height: 1.5;
 
+  @include f.mq(md) {
+    height: 35px;
+  }
+
   &:nth-child(2n) {
     background-color: rgba(49, 37, 28, 0.1);
   }
@@ -53,18 +75,48 @@
     font-size: 2rem;
     font-weight: 800;
     vertical-align: middle;
+
+    @include f.mq(md) {
+      font-size: 1.3rem;
+    }
   }
 
   td {
     vertical-align: middle;
+
+    @include f.mq(md) {
+      font-size: 1.1rem;
+    }
   }
 }
 
 .p-hotel-price__comment {
   background-color: rgba(49, 37, 28, 0.1);
-  padding: 31px 33px;
+  padding: 31px 49px;
+
+  @include f.mq(md) {
+    padding: 14px 20px 14px 31px;
+  }
 }
 
 .p-hotel-price__comment-text {
   line-height: 1.5;
+  position: relative;
+
+  &::before {
+    content: "※";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -16px;
+
+    @include f.mq(md) {
+      left: -11px;
+    }
+
+  }
+
+  @include f.mq(md) {
+    font-size: 1.1rem; 
+  }
 }
