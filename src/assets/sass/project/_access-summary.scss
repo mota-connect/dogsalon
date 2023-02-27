@@ -1,0 +1,66 @@
+@use "foundation" as f;
+
+.p-access-summary {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.p-access-summary__title {
+  margin-bottom: 70px;
+}
+
+.p-access-summary__box {
+  position: relative;
+}
+
+.p-access-summary__box-bg {
+  max-width: 950px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.p-access-summary__box-item {
+  width: 550px;
+  height: 437px;
+  background-color: rgba(117, 83, 57, 0.8);
+  color: f.$c-subtext;
+  padding: 50px 70px;
+  font-weight: 800;
+  line-height: calc(36 / 16);
+  position: relative;
+  margin: -186px auto 30px;
+  z-index: 10;
+  margin-bottom: 70px;
+
+}
+
+.p-access-summary__box-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.p-access-summary__box-address {
+  text-align: center;
+}
+
+.p-access-summary__box-tel {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.p-access-summary__box-comment {
+  text-align: center;
+}
+
+.p-access-summary__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-access-summary__picture {
+  max-width: 300px;
+  width: 31.372%;
+} 

@@ -531,6 +531,70 @@ a:hover {
 	line-height: 1.625;
 }
 
+.p-access-summary {
+	padding: 100px 20px;
+	text-align: center;
+}
+
+.p-access-summary__title {
+	margin-bottom: 70px;
+}
+
+.p-access-summary__box {
+	position: relative;
+}
+
+.p-access-summary__box-bg {
+	margin: 0 auto;
+	max-width: 950px;
+}
+
+.p-access-summary__box-bg img {
+	width: 100%;
+}
+
+.p-access-summary__box-item {
+	background-color: rgba(117, 83, 57, 0.8);
+	color: #FEFDF9;
+	font-weight: 800;
+	height: 437px;
+	line-height: 2.25;
+	margin: -186px auto 30px;
+	margin-bottom: 70px;
+	padding: 50px 70px;
+	position: relative;
+	width: 550px;
+	z-index: 10;
+}
+
+.p-access-summary__box-text {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.p-access-summary__box-address {
+	text-align: center;
+}
+
+.p-access-summary__box-tel {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.p-access-summary__box-comment {
+	text-align: center;
+}
+
+.p-access-summary__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.p-access-summary__picture {
+	max-width: 300px;
+	width: 31.372%;
+}
+
 .p-drawer-icon {
 	cursor: pointer;
 	height: 14px;
