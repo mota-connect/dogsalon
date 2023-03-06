@@ -531,6 +531,26 @@ a:hover {
 	line-height: 1.625;
 }
 
+.p-access-map {
+	margin-bottom: 100px;
+	position: relative;
+	width: 100%;
+}
+
+.p-access-map::before {
+	content: "";
+	display: block;
+	padding-top: 50.833%;
+}
+
+.p-access-map iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
 .p-access-summary {
 	padding: 100px 20px;
 	text-align: center;
@@ -1440,6 +1460,71 @@ a:hover {
 .p-about-instagram__picture {
 	margin-bottom: 5px;
 	width: 150px;
+}
+
+.p-access-map {
+	margin-bottom: 40px;
+}
+
+.p-access-summary {
+	padding: 50px 20px 20px;
+}
+
+.p-access-summary__box-item {
+	font-weight: 500;
+	height: auto;
+	margin: -76px auto 15px;
+	padding: 10px;
+	width: 73.134%;
+}
+
+.p-access-summary__box-text {
+	font-size: 1.1rem;
+	line-height: 1.8181818182;
+	margin-bottom: 10px;
+}
+
+.p-access-summary__box-address {
+	font-size: 1.2rem;
+	line-height: 2.25;
+}
+
+.p-access-summary__box-tel {
+	font-size: 1.2rem;
+	line-height: 2.25;
+	margin-bottom: -20px;
+}
+
+.p-access-summary__box-comment {
+	font-size: 1.2rem;
+	line-height: 2.25;
+}
+
+.p-access-summary__wrapper {
+	justify-content: center;
+}
+
+.p-access-summary__picture {
+	position: relative;
+	width: 43.077%;
+}
+
+.p-access-summary__picture::before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+}
+
+.p-access-summary__picture:first-child {
+	margin-right: 10px;
+}
+
+.p-access-summary__picture img {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .p-hotel-price {

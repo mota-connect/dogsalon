@@ -1,0 +1,25 @@
+@use "foundation" as f;
+
+.p-access-map {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+
+  @include f.mq(md) {
+    margin-bottom: 40px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 50.833%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
