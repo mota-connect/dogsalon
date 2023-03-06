@@ -913,6 +913,79 @@ a:hover {
 	right: 0;
 }
 
+.p-reservation-form {
+	padding: 100px 20px;
+	text-align: center;
+}
+
+.p-reservation-form__title {
+	display: inline-block;
+	margin-bottom: 98px;
+	position: relative;
+}
+
+.p-reservation-main__comment {
+	bottom: 0;
+	font-size: 1.3rem;
+	font-weight: 500;
+	position: absolute;
+	right: -200px;
+}
+
+.p-reservation-form__list {
+	margin-left: 14%;
+	text-align: left;
+}
+
+.p-reservation-form__list-wrap {
+	align-items: center;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.p-reservation-form__list-wrap:last-child {
+	align-items: flex-start;
+}
+
+.p-reservation-form__list-wrap:last-child > .p-reservation-form__list-head {
+	padding-top: 13px;
+}
+
+.p-reservation-form__list-head {
+	width: 244px;
+}
+
+.p-reservation-form__list-input input {
+	border: 0.5px solid #31251c;
+	height: 50px;
+	width: 280px;
+}
+
+.p-reservation-form__list-textarea {
+	height: 250px;
+	margin-bottom: 30px;
+	width: 56%;
+}
+
+.p-reservation-form__list-textarea textarea {
+	height: 100%;
+	width: 100%;
+}
+
+.p-reservation-form__button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	background-color: #755339;
+	border: none;
+	color: #FEFDF9;
+	font-weight: 800;
+	outline: none;
+	padding: 0;
+	padding: 17px 98px;
+}
+
 .p-top-infomation {
 	padding: 100px 40px;
 }
