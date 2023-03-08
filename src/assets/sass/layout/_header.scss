@@ -68,6 +68,11 @@
 .l-header__reservation {
   background-color: f.$c-base;
   text-align: center;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .l-header__reservation-link {
