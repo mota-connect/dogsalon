@@ -913,6 +913,29 @@ a:hover {
 	right: 0;
 }
 
+.p-news-main {
+	padding: 100px 20px 80px;
+	width: 600px;
+}
+
+.p-news-main__title {
+	margin-bottom: 80px;
+}
+
+.p-news-main__wrapper {
+	border-bottom: 1px solid #31251C;
+	display: flex;
+	letter-spacing: 0.03em;
+	line-height: 2.25;
+	padding: 20px 0;
+}
+
+.p-news-main__date {
+	margin-right: 75px;
+	padding-left: 133px;
+	width: 210px;
+}
+
 .p-reservation-form {
 	padding: 100px 20px;
 	text-align: center;
@@ -1761,6 +1784,27 @@ a:hover {
 .p-menu-type__accent {
 	font-size: 4rem;
 	right: 20px;
+}
+
+.p-news-main {
+	max-width: 450px;
+	padding: 50px 40px 40px;
+	width: 100%;
+}
+
+.p-news-main__title {
+	margin-bottom: 20px;
+}
+
+.p-news-main__wrapper {
+	font-size: 1.1rem;
+	padding: 15px 0;
+}
+
+.p-news-main__date {
+	margin-right: 25px;
+	padding-left: 15px;
+	width: 68px;
 }
 
 .p-reservation-form {
