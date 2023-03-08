@@ -134,4 +134,10 @@
   color: f.$c-subtext;
   background-color: f.$c-base;
   padding: 17px 98px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
