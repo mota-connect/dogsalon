@@ -918,10 +918,14 @@ a:hover {
 	text-align: center;
 }
 
-.p-reservation-form__title {
-	display: inline-block;
+.p-reservation-form__box {
 	margin-bottom: 98px;
 	position: relative;
+	text-align: center;
+}
+
+.p-reservation-form__title {
+	display: inline-block;
 }
 
 .p-reservation-main__comment {
@@ -929,7 +933,7 @@ a:hover {
 	font-size: 1.3rem;
 	font-weight: 500;
 	position: absolute;
-	right: -200px;
+	right: 230px;
 }
 
 .p-reservation-form__list {
@@ -945,6 +949,7 @@ a:hover {
 
 .p-reservation-form__list-wrap:last-child {
 	align-items: flex-start;
+	margin-bottom: 80px;
 }
 
 .p-reservation-form__list-wrap:last-child > .p-reservation-form__list-head {
@@ -955,6 +960,10 @@ a:hover {
 	width: 244px;
 }
 
+.p-reservation-form__list-input {
+	width: calc(100% - 244px);
+}
+
 .p-reservation-form__list-input input {
 	border: 0.5px solid #31251c;
 	height: 50px;
@@ -963,11 +972,11 @@ a:hover {
 
 .p-reservation-form__list-textarea {
 	height: 250px;
-	margin-bottom: 30px;
 	width: 56%;
 }
 
 .p-reservation-form__list-textarea textarea {
+	border: 0.5px solid #31251c;
 	height: 100%;
 	width: 100%;
 }
@@ -1752,6 +1761,56 @@ a:hover {
 .p-menu-type__accent {
 	font-size: 4rem;
 	right: 20px;
+}
+
+.p-reservation-form {
+	padding: 50px 47px 40px;
+}
+
+.p-reservation-form__box {
+	margin-bottom: 10px;
+}
+
+.p-reservation-form__title {
+	display: block;
+}
+
+.p-reservation-main__comment {
+	position: static;
+	text-align: right;
+}
+
+.p-reservation-form__list {
+	margin-left: 0;
+}
+
+.p-reservation-form__list-wrap {
+	display: block;
+}
+
+.p-reservation-form__list-wrap:last-child {
+	margin-bottom: 30px;
+}
+
+.p-reservation-form__list-wrap:last-child > .p-reservation-form__list-head {
+	padding-top: 0;
+}
+
+.p-reservation-form__list-head {
+	font-size: 1.1rem;
+}
+
+.p-reservation-form__list-input {
+	width: 100%;
+}
+
+.p-reservation-form__list-input input {
+	width: 100%;
+}
+
+.p-reservation-form__list-textarea {
+	height: 185px;
+	width: 100%;
 }
 
 .p-top-infomation {

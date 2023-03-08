@@ -3,12 +3,28 @@
 .p-reservation-form {
   padding: 100px 20px;
   text-align: center;
+
+  @include f.mq(md) {
+    padding: 50px 47px 40px;
+  }
+}
+
+.p-reservation-form__box {
+  text-align: center;
+  margin-bottom: 98px;
+  position: relative;
+
+  @include f.mq(md) {
+    margin-bottom: 10px;
+  }
 }
 
 .p-reservation-form__title {
   display: inline-block;
-  margin-bottom: 98px;
-  position: relative;
+
+  @include f.mq(md) {
+    display: block;
+  }
 }
 
 .p-reservation-main__comment {
@@ -16,7 +32,13 @@
   font-weight: 500;
   position: absolute;
   bottom: 0;
-  right: -200px;
+  right: 230px;
+
+
+  @include f.mq(md) {
+    position: static;
+    text-align: right;
+  }
 }
 
 .p-reservation-form__menu {
@@ -25,43 +47,78 @@
 .p-reservation-form__list {
   margin-left: 14%;
   text-align: left;
+
+  @include f.mq(md) {
+    margin-left: 0;
+  }
 }
 
 .p-reservation-form__list-wrap {
   display: flex;
-  // justify-content: center;
   align-items: center;
   margin-bottom: 50px;
 
+  @include f.mq(md) {
+    display: block;
+  }
+
   &:last-child {
     align-items: flex-start;
+    margin-bottom: 80px;
+
+    @include f.mq(md) {
+      margin-bottom: 30px;
+    }
 
     & > .p-reservation-form__list-head {
       padding-top: 13px;
+
+      @include f.mq(md) {
+        padding-top: 0;
+      }
     }
   }
 }
 
 .p-reservation-form__list-head {
   width: 244px;
+
+  @include f.mq(md) {
+    font-size: 1.1rem;
+  }
 }
 
 .p-reservation-form__list-input {
+  width: calc(100% - 244px);
+
+  @include f.mq(md) {
+    width: 100%;
+  }
+
   input {
     width: 280px;
     height: 50px;
     border: 0.5px solid #31251c;
+
+    @include f.mq(md) {
+      width: 100%;
+    }
   }
 }
 
 .p-reservation-form__list-textarea {
   width: 56%;
   height: 250px;
-  margin-bottom: 30px;
+
+  @include f.mq(md) {
+    width: 100%;
+    height: 185px;
+  }
 
   textarea {
     width: 100%;
     height: 100%;
+    border: 0.5px solid #31251c;
   }
 }
 
