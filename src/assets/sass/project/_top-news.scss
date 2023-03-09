@@ -97,6 +97,7 @@
   letter-spacing: 0.03em;
   padding: 10px 27px;
   position: relative;
+  
 
   @include f.mq(sm) {
     font-size: 1.3rem;
@@ -107,23 +108,30 @@
     display: block;
     width: 80px;
     text-align: center;
-    height: 1px;
-    background-color: f.$c-base;
     position: absolute;
-    top: 80%;
+    top: 55%;
     left: 50%;
-    transform: translateX(-50%);
+    width: 80px;
+    height: 10px;
+    border-right: 2px solid f.$c-text;
+    border-bottom: 1px solid f.$c-text;
+    transform: translateX(-55%) skew(45deg);
+    transition: 0.3s;
   }
-
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 1px;
-    background-color: f.$c-base;
-    transform: rotate(-135deg);
-    position: absolute;
-    bottom: 11px;
-    left: 82%;
+  
+  &:hover::before {
+    width: 90px;
+    left: 56%;
   }
+  // &::after {
+  //   content: "";
+  //   display: inline-block;
+  //   width: 14px;
+  //   height: 1px;
+  //   background-color: f.$c-base;
+  //   transform: rotate(-135deg);
+  //   position: absolute;
+  //   bottom: 11px;
+  //   left: 82%;
+  // }
 }
