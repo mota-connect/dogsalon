@@ -406,6 +406,11 @@ a:hover {
 .l-header__reservation {
 	background-color: #755339;
 	text-align: center;
+	transition: 0.3s;
+}
+
+.l-header__reservation:hover {
+	opacity: 0.6;
 }
 
 .l-header__reservation-link {
@@ -989,7 +994,9 @@ a:hover {
 
 .p-reservation-form__list-input input {
 	border: 0.5px solid #31251c;
+	font-size: 2rem;
 	height: 50px;
+	padding: 0px 10px;
 	width: 280px;
 }
 
@@ -1000,7 +1007,9 @@ a:hover {
 
 .p-reservation-form__list-textarea textarea {
 	border: 0.5px solid #31251c;
+	font-size: 2rem;
 	height: 100%;
+	padding: 10px;
 	width: 100%;
 }
 
@@ -1012,10 +1021,27 @@ a:hover {
 	background-color: #755339;
 	border: none;
 	color: #FEFDF9;
+	cursor: pointer;
 	font-weight: 800;
 	outline: none;
 	padding: 0;
 	padding: 17px 98px;
+	transition: 0.5s;
+}
+
+.p-reservation-form__button:hover {
+	opacity: 0.6;
+}
+
+.p-reservation-form__end-message {
+	display: none;
+	font-size: 2.2rem;
+}
+
+.p-reservation-form__false-message {
+	color: red;
+	display: none;
+	font-size: 2.2rem;
 }
 
 .p-top-infomation {
