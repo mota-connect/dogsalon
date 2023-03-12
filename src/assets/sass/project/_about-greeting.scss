@@ -3,10 +3,18 @@
 .p-about-greeting {
   text-align: center;
   padding: 100px 20px 0;
+
+  @include f.mq(md) {
+    padding-top: 50px;
+  }
 }
 
 .p-about-greeting__title {
   margin-bottom: 70px;
+
+  @include f.mq(md) {
+    margin-bottom: 10px;
+  }
   
 }
 
@@ -14,4 +22,8 @@
   line-height: calc(36 / 16);
   letter-spacing: 0.03em;
   text-align: center;
+
+  @include f.mq(md) {
+    font-size: 1.1rem;
+  }
 }

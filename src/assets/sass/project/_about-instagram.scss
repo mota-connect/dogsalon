@@ -10,7 +10,7 @@
 
   @include f.mq(md) {
     max-width: 600px;
-    padding: 50px 40px 40px;
+    padding: 50px 47px 40px;
   }
 
   @include f.mq(sm) {
@@ -38,20 +38,24 @@
 
 .p-about-instagram__picture {
   width: 250px;
-  height: auto;
+  // height: 100%;
   margin-bottom: 15px;
+  aspect-ratio: 1 / 1;
 
   @include f.mq(lg) {
     width: 200px;
+    height: 200px;
   }
 
   @include f.mq(md) {
     width: 150px;
+    height: 150px;
     margin-bottom: 5px;
   }
 
   @include f.mq(sm) {
     width: 90px;
+    height: 90px;
   }
 
 }

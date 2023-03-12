@@ -498,7 +498,7 @@ a:hover {
 }
 
 .p-about-instagram__picture {
-	height: auto;
+	aspect-ratio: 1/1;
 	margin-bottom: 15px;
 	width: 250px;
 }
@@ -670,7 +670,7 @@ a:hover {
 	bottom: 0;
 	left: 0;
 	padding: 34% 0;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 0;
 	transform: translateX(-200%);
@@ -1489,6 +1489,7 @@ a:hover {
 }
 
 .p-about-instagram__picture {
+	height: 200px;
 	width: 200px;
 }
 
@@ -1575,9 +1576,21 @@ a:hover {
 	position: fixed;
 }
 
+.p-about-greeting {
+	padding-top: 50px;
+}
+
+.p-about-greeting__title {
+	margin-bottom: 10px;
+}
+
+.p-about-greeting__text {
+	font-size: 1.1rem;
+}
+
 .p-about-instagram {
 	max-width: 600px;
-	padding: 50px 40px 40px;
+	padding: 50px 47px 40px;
 }
 
 .p-about-instagram__title {
@@ -1585,8 +1598,45 @@ a:hover {
 }
 
 .p-about-instagram__picture {
+	height: 150px;
 	margin-bottom: 5px;
 	width: 150px;
+}
+
+.p-about-staff {
+	padding: 50px 20px 0px;
+}
+
+.p-about-staff__title {
+	margin-bottom: 15px;
+}
+
+.p-about-staff__wrapper {
+	display: block;
+}
+
+.p-about-staff__picture {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.p-about-staff__picture:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.p-about-staff__picture img {
+	margin-bottom: 5px;
+	max-width: 220px;
+	width: 56.716%;
+}
+
+.p-about-staff__name {
+	font-size: 1.4rem;
+}
+
+.p-about-staff__text {
+	font-size: 1.1rem;
 }
 
 .p-access-map {
@@ -2023,6 +2073,7 @@ a:hover {
 }
 
 .p-about-instagram__picture {
+	height: 90px;
 	width: 90px;
 }
 

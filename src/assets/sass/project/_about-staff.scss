@@ -2,6 +2,10 @@
 
 .p-about-staff {
   padding-top: 100px;
+
+  @include f.mq(md) {
+    padding: 50px 20px 0px;
+  }
 }
 
 .p-about-staff__container {
@@ -10,18 +14,43 @@
 
 .p-about-staff__title {
   margin-bottom: 70px;
+
+  @include f.mq(md) {
+    margin-bottom: 15px;
+  }
 }
 
 .p-about-staff__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @include f.mq(md) {
+    display: block;
+  }
 }
 
 .p-about-staff__picture {
   width: 300px;
 
+  @include f.mq(md) {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   img {
     margin-bottom: 20px;
+    
+
+    @include f.mq(md) {
+      margin-bottom: 5px;
+      width: 56.716%;
+      max-width: 220px;
+    }
   }
 }
 
@@ -31,9 +60,17 @@
   margin-bottom: 10px;
   font-size: 2rem;
   font-weight: 800;
+
+  @include f.mq(md) {
+    font-size: 1.4rem;
+  }
 }
 
 .p-about-staff__text {
   line-height: calc(26 / 16);
+
+  @include f.mq(md) {
+    font-size: 1.1rem;
+  }
 }
 
