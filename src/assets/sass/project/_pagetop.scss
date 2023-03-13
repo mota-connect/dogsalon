@@ -1,0 +1,32 @@
+@use "foundation" as f;
+
+.p-pagetop {
+  position: fixed;
+  bottom: 50px;
+  right: 14.583%;
+  background-color: f.$c-base;
+  text-align: center;
+  z-index: 50;
+  
+  @include f.mq(md) {
+    right: 20px;
+  }
+}
+
+.p-pagetop__link {
+  width: 55px;
+  height: 55px;
+  display: block;
+  padding: 13px 10px;
+  box-sizing: border-box;
+
+  @include f.mq(md) {
+    width: 50px;
+    height: 50px;
+    padding: 12px 9px;
+  }
+
+  img {
+
+  }
+}
