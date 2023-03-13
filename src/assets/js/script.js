@@ -6,3 +6,51 @@ $(function() {
     // $('html').toggleClass('fixed');
   });
 })
+
+// スムーススクロール -------------------------
+$('a[href^="#"]').click(function() {
+  let headerheight = 90;
+  // スクロールの速度
+  let speed = 500; // ミリ秒で記述
+  let href= $(this).attr("href");
+  let target = $(href == "#" || href == "" ? 'html' : href);
+  let position = target.offset().top - headerheight;
+  $('body,html').animate({scrollTop:position}, speed, 'swing');
+  return false;
+});
+
+// スクロールトップボタン（スクロールで表示） -------------
+let pagetop = $('#js-pagetop');   
+pagetop.hide();
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {  //500pxスクロールで表示
+        pagetop.fadeIn();
+    } else {
+        pagetop.fadeOut();
+    }
+});
+pagetop.click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 500); //0.5秒かけてトップへ移動
+    return false;
+});
+
+// 
+$(window).on("scroll", function () {
+  scrollHeight = $(document).height();
+  scrollPosition = $(window).height() + $(window).scrollTop();
+  footHeight = $("footer").innerHeight();
+  if (scrollHeight - scrollPosition <= footHeight) {
+  // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+    $(".p-pagetop").css({
+      position: "absolute",
+      bottom: footHeight + 13,
+    });
+  } else {
+    $(".p-pagetop").css({
+      position: "fixed",
+      bottom: "13px",
+    });
+  }
+});
