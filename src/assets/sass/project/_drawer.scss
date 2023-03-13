@@ -1,7 +1,7 @@
 @use "foundation" as f;
 
 .p-drawer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -11,6 +11,7 @@
   padding: 34% 0;
   transform: translateX(-200%);
   transition: 0.5s;
+  font-family: f.$ff-en;
   
   &.open {
     transform: none;
@@ -28,13 +29,29 @@
 }
 
 .p-drawer__menu {
-
+  margin-bottom: 80px;
 }
 
 .p-drawer__list {
   margin-bottom: 50px;
+  font-size: 1.4rem;
 }
 
 .p-drawer__link {
   
+}
+
+.p-drawer__reservation {
+  display: inline-block;
+  text-align: center;
+  background-color: f.$c-subtext;
+  border-radius: 20px;
+}
+
+.p-drawer__reservation-link {
+  padding: 20px 50px;
+  display: inline-block;
+  color: f.$c-text;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
