@@ -221,6 +221,10 @@ a:hover {
 	max-width: 1020px;
 }
 
+body {
+	position: relative;
+}
+
 .product1 > .l-firstview {
 	background-image: url(../img/top_firstview.jpg);
 }
@@ -668,6 +672,7 @@ a:hover {
 .p-drawer {
 	background-color: #755339;
 	bottom: 0;
+	font-family: "Times New Roman", serif;
 	left: 0;
 	padding: 34% 0;
 	position: fixed;
@@ -691,8 +696,28 @@ a:hover {
 	text-align: center;
 }
 
+.p-drawer__menu {
+	margin-bottom: 80px;
+}
+
 .p-drawer__list {
+	font-size: 1.4rem;
 	margin-bottom: 50px;
+}
+
+.p-drawer__reservation {
+	background-color: #FEFDF9;
+	border-radius: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+.p-drawer__reservation-link {
+	color: #31251C;
+	display: inline-block;
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 20px 50px;
 }
 
 .p-hotel-price {
@@ -941,6 +966,23 @@ a:hover {
 	width: 210px;
 }
 
+.p-pagetop {
+	background-color: #755339;
+	bottom: 50px;
+	position: fixed;
+	right: 14.583%;
+	text-align: center;
+	z-index: 50;
+}
+
+.p-pagetop__link {
+	box-sizing: border-box;
+	display: block;
+	height: 55px;
+	padding: 13px 10px;
+	width: 55px;
+}
+
 .p-reservation-form {
 	padding: 100px 20px;
 	text-align: center;
@@ -994,6 +1036,7 @@ a:hover {
 
 .p-reservation-form__list-input input {
 	border: 0.5px solid #31251c;
+	box-sizing: border-box;
 	font-size: 2rem;
 	height: 50px;
 	padding: 0px 10px;
@@ -1007,6 +1050,7 @@ a:hover {
 
 .p-reservation-form__list-textarea textarea {
 	border: 0.5px solid #31251c;
+	box-sizing: border-box;
 	font-size: 2rem;
 	height: 100%;
 	padding: 10px;
@@ -1879,6 +1923,16 @@ a:hover {
 	width: 68px;
 }
 
+.p-pagetop {
+	right: 20px;
+}
+
+.p-pagetop__link {
+	height: 50px;
+	padding: 12px 9px;
+	width: 50px;
+}
+
 .p-reservation-form {
 	padding: 50px 47px 40px;
 }
@@ -1902,6 +1956,7 @@ a:hover {
 
 .p-reservation-form__list-wrap {
 	display: block;
+	margin-bottom: 10px;
 }
 
 .p-reservation-form__list-wrap:last-child {

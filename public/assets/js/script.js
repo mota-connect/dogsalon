@@ -7,27 +7,50 @@ $(function() {
   });
 })
 
-// フォームの送信時
+// スムーススクロール -------------------------
+$('a[href^="#"]').click(function() {
+  let headerheight = 90;
+  // スクロールの速度
+  let speed = 500; // ミリ秒で記述
+  let href= $(this).attr("href");
+  let target = $(href == "#" || href == "" ? 'html' : href);
+  let position = target.offset().top - headerheight;
+  $('body,html').animate({scrollTop:position}, speed, 'swing');
+  return false;
+});
 
-$(document).ready(function () {
+// スクロールトップボタン（スクロールで表示） -------------
+let pagetop = $('#js-pagetop');   
+pagetop.hide();
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {  //500pxスクロールで表示
+        pagetop.fadeIn();
+    } else {
+        pagetop.fadeOut();
+    }
+});
+pagetop.click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 500); //0.5秒かけてトップへ移動
+    return false;
+});
 
-  $('#js-form').submit(function (event) {
-    var formData = $('#js-form').serialize();
-    $.ajax({
-      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsJ9_sK1xE1IC4dZGq2kQmDKFGX3So9uZt3tSAFwxGFJLiEw/formResponse",
-      data: formData,
-      type: "POST",
-      dataType: "xml",
-      statusCode: {
-        0: function () {
-          $(".p-reservation-form__end-message").slideDown();
-          $("#js-form").fadeOut();
-          $(".p-reservation-form__box").fadeOut();
-          //window.location.href = "thanks.html";
-        }
-      }
+// 
+$(window).on("scroll", function () {
+  scrollHeight = $(document).height();
+  scrollPosition = $(window).height() + $(window).scrollTop();
+  footHeight = $("footer").innerHeight();
+  if (scrollHeight - scrollPosition <= footHeight) {
+  // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+    $(".p-pagetop").css({
+      position: "absolute",
+      bottom: footHeight + 13,
     });
-    event.preventDefault();
-  });
-
+  } else {
+    $(".p-pagetop").css({
+      position: "fixed",
+      bottom: "13px",
+    });
+  }
 });
