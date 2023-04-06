@@ -54,3 +54,24 @@ $(window).on("scroll", function () {
     });
   }
 });
+
+// フォームの部分
+$(function() {
+  let $formData = $('#js-form')
+  $formData.submit(function (e) {
+    $.ajax({  
+      url: $formData.attr('action'),
+      data: $formData.serialize(), 
+      type: "POST",
+      dataType: "xml",
+      statusCode: {
+        0: function () {
+          $(".p-reservation-form__end-message").slideDown();
+          $formData.fadeOut();
+          $(".p-reservation-form__box").fadeOut();
+        }
+      }
+    });
+    return false;
+  });
+})
