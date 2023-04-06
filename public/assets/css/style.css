@@ -690,7 +690,6 @@ body {
 
 .p-drawer__nav {
 	color: #FEFDF9;
-	font-size: 1.8rem;
 	font-weight: 700;
 	height: 100vh;
 	text-align: center;
@@ -701,7 +700,7 @@ body {
 }
 
 .p-drawer__list {
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	margin-bottom: 50px;
 }
 
@@ -715,7 +714,7 @@ body {
 .p-drawer__reservation-link {
 	color: #31251C;
 	display: inline-block;
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 	font-weight: 700;
 	padding: 20px 50px;
 }
